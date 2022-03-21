@@ -1,7 +1,10 @@
-import "./App.css";
-
+import Register from "./components/Register/Register";
 function App() {
-  return <div>Karo Start Up Project</div>;
+  return (
+    <>
+      <Register />
+    </>
+  );
 }
 
 export default App;
