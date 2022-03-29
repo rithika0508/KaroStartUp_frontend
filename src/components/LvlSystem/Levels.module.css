@@ -1,0 +1,114 @@
+.main {
+  width: 100vw;
+  background-color: #8f312c;
+  position: relative;
+  z-index: 1000;
+}
+.circle1 {
+  position: absolute;
+  border-radius: 100%;
+  left: -20vw;
+  top: -10vh;
+  /* z-index: 100000; */
+  /* display: none; */
+}
+.circle2 {
+  width: 30vh;
+  position: absolute;
+  bottom: 0vh;
+  right: 0vw;
+  border-radius: 100%;
+  z-index: -1;
+}
+.levels__main {
+  margin: auto;
+  /* height: 100vh; */
+  width: 50%;
+  border: solid gray 2px;
+  border-radius: 25px;
+  text-align: center;
+  background-color: #fff;
+}
+.intro {
+  text-align: left;
+  margin: 2rem;
+}
+
+.levelpage {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 20px;
+  background-color: #8f312c;
+  color: wheat;
+}
+.level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  padding: 1rem 0.5rem;
+  cursor: pointer;
+}
+.level:hover {
+  box-shadow: 0 0 3px #fc4c3c;
+  margin-top: -20px;
+  background-color: #582424;
+  border-radius: 20px;
+  transition: 0.5s;
+  /* color: black; */
+}
+
+.medalImage {
+  width: 30%;
+  border-radius: 100%;
+}
+.level__text {
+  text-align: center;
+  /* color: blue; */
+}
+.copy {
+  width: fit-content;
+  margin-top: 1rem !important;
+  /* color: #8f312c; */
+  /* border: solid #8f312c 1px; */
+  margin: auto;
+  /* width: 40%; */
+}
+.url {
+  font-weight: 500;
+  margin: 0 0.5rem;
+  border: solid lightgray 1px;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+.referralText {
+  margin-top: 1rem !important;
+  width: 50%;
+  margin: auto;
+  font-weight: 600;
+  font-size: 15px;
+  color: #682c24;
+}
+.connect {
+  width: fit-content;
+  margin: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #682c24;
+  font-weight: 400;
+}
+
+.connectlogo {
+  margin-right: 4px;
+}
+@media (max-width: 1120px) {
+  .circle1 {
+    display: none;
+  }
+}
+/* @media(min-width: ) */
