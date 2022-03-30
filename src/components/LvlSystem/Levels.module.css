@@ -1,8 +1,9 @@
 .main {
-  width: 100vw;
-  background-color: #8f312c;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(252,76,60,1) 0%, rgba(0,0,0,1) 100% ,rgba(252,76,60,1) 0%);
   position: relative;
   z-index: 1000;
+  height: 100%;
 }
 .circle1 {
   position: absolute;
@@ -41,7 +42,7 @@
   margin: auto;
   margin-top: 2rem;
   border-radius: 20px;
-  background-color: #8f312c;
+  background: linear-gradient(90deg, rgba(252,76,60,1) 0%, rgba(0,0,0,1) 100% ,rgba(252,76,60,1) 0%);
   color: wheat;
 }
 .level {
@@ -106,9 +107,50 @@
 .connectlogo {
   margin-right: 4px;
 }
-@media (max-width: 1120px) {
-  .circle1 {
-    display: none;
+@media only screen and (min-width: 481px) and (max-width:768px){
+  .circle1{
+    z-index: -1;
+    position: absolute;
+    border-radius: 100%;
+    left: -36vw;
+    top: -10vh;
+  }
+  .circle2{
+    width: 30vh;
+    position: absolute;
+    bottom: 0vh;
+    right: -20vw;
+    border-radius: 100%;
+    z-index: -1;
+  }
+  .main{
+    z-index: 1;
+    overflow-x: hidden;
+  }
+}
+@media (max-width:480px){
+  .circle1{
+    z-index: -1;
+    position: absolute;
+    border-radius: 100%;
+    left: -78vw;
+    top: -10vh;
+  }
+  .circle2{
+    width: 30vh;
+    position: absolute;
+    bottom: 0vh;
+    right: -31vw;
+    border-radius: 100%;
+    z-index: -1;
+  }
+  .main{
+    overflow-x: hidden;
+    z-index: 1;
+    height: 100%;
+  }
+  .levels__main{
+    width: 80%;
   }
 }
 /* @media(min-width: ) */

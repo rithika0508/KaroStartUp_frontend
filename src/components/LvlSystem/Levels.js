@@ -5,7 +5,7 @@ import styles from "./Levels.module.css";
 const Level = () => {
   const [name, setName] = useState("rithika");
   const [lvl, setLvl] = useState(0);
-  const [levelVisibility, setLevelVisibility] = useState(false);
+  const [levelVisibility, setLevelVisibility] = useState(true);
   const [referenceUrl, setReferneceUrl] = useState("google.com");
   const [copyVisibility, setCopyVisibility] = useState(false);
 

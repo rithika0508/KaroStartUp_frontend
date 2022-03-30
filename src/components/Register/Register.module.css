@@ -1,4 +1,98 @@
 .register__form {
   width: 50%;
   margin: auto;
+  overflow-x: hidden;
 }
+.register__background{
+  background: linear-gradient(90deg, rgba(252,76,60,1) 0%, rgba(0,0,0,1) 100% ,rgba(252,76,60,1) 0%);
+  color: white;
+  width: 100%;
+  font-size: large;
+  position: relative;
+}
+.circle1 {
+  position: absolute;
+  border-radius: 100%;
+  left: -20vw;
+  top: -10vh;
+  z-index: 1;
+  /* z-index: 100000; */
+  /* display: none; */
+}
+
+.circle2 {
+  width: 30vh;
+  position: absolute;
+  bottom: 0vh;
+  right: 0vw;
+  background-color: rgba(88,36,36,1);
+  border-radius: 100%;
+  z-index: 1;
+}
+@media only screen and (min-width: 481px) and (max-width:768px){
+  .circle1{
+    z-index: -1;
+    position: absolute;
+    border-radius: 100%;
+    left: -36vw;
+    top: -10vh;
+  }
+  .circle2{
+    width: 30vh;
+    position: absolute;
+    bottom: 0vh;
+    right: -20vw;
+    border-radius: 100%;
+    z-index: -1;
+  }
+  .register__background{
+    z-index: 1;
+    overflow-x: hidden;
+  }
+}
+@media (max-width:480px){
+  .circle1{
+    z-index: -1;
+    position: absolute;
+    border-radius: 100%;
+    left: -78vw;
+    top: -10vh;
+  }
+  .circle2{
+    width: 30vh;
+    position: absolute;
+    bottom: 0vh;
+    right: -31vw;
+    border-radius: 100%;
+    z-index: -1;
+  }
+  .register__background{
+    z-index: 1;
+    overflow-x: hidden;
+  }
+}
+
+
+.headingForAnimation{
+  display: flex;
+  justify-content: center;
+  animation: animate 2s linear infinite alternate-reverse;
+}
+@keyframes animate {
+  from{
+    letter-spacing: 0px;
+  }
+  to{
+    letter-spacing: 2.5px;
+  }
+}
+.register__emailText{
+  color: white;
+}
+.register__formcontrol:focus{
+  border-color: white !important;
+  box-shadow: 0px 0px 8px 4px rgba(255, 255, 255, 0.75) !important;
+}
+
+
+

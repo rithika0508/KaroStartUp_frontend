@@ -3,7 +3,7 @@ import Level from "./components/LvlSystem/Levels";
 function App() {
   return (
     <>
-      <Register />
+      <Register/>
       <Level />
     </>
   );
