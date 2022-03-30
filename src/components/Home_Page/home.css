@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow-x: hidden;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-image: url("Home.svg");
+    
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.HomeImg{
+    float:right;
+    width: 400px;
+}
+.head{
+    font-size: 28px;
+    color: white;
+}
+.regButton{
+    width: 100px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+}
+.navbar{
+    background: #d33d2e;
+    border: none;
+    background: linear-gradient(90deg, #d33d2e 10%, rgba(0,0,0,1) 100%);
+}
+.logo{
+    width: 100px;
+    height: 100px;
+  
+}
+a{
+    text-decoration: none;
+    color: white !important;
+
+}
