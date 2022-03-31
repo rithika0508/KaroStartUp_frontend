@@ -7,12 +7,10 @@ export default function Home() {
   return (
        <> <div className="main">
         <div className="row">
-        <div className="col-lg-4 col-md-12 mx-5">
-                <img className="HomeImg" src={HomeImage} />
-            </div>
+       
             <nav className="navbar navbar-expand-lg navbar-dark ">
                 <div className="container-fluid">
-                  <a className="navbar-brand" href="#"><img classname="logo" src={logo} /></a>
+                  <a className="navbar-brand" href="#"><img className="logo" src={logo} /></a>
                   <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                   </button>
@@ -45,8 +43,11 @@ export default function Home() {
                 <p className="head my-5">Bridging India’s Skill Gap through Live classnameroom and Internship opportunities.</p>
                 <button className="regButton ">Register</button>
             </div>
-            
+            <div className="col-lg-4 col-md-12 mx-5">
+                <img className="HomeImg" src={HomeImage} />
+            </div>
         </div>
+        
         
         
     </div>

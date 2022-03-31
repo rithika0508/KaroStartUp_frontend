@@ -22,10 +22,9 @@ const ChatBot=()=> {
         }
     }
     return (<>
-        <Container className=" d-flex justify-content-end">
+        <Container fluid className={`d-flex justify-content-end ${styles.ChatContainer}`}>
             <Row>
-                {chatIcon && <FontAwesomeIcon icon={faComment} className={styles.ChatIcon} onClick={handleDisplay}/>}
-                {chatBody && <Card style={{ width: '18rem' } } className={styles.ChatCard}>
+            {chatBody && <Card style={{ width: '17rem' } } className={styles.ChatCard}>
                     <Card.Body>
                         <Card.Title className="d-flex justify-content-around"><h3>Contact Us</h3><Button variant="light" onClick={handleDisplay}>X</Button></Card.Title>
                         <Card.Text>
@@ -50,6 +49,8 @@ const ChatBot=()=> {
                         </Card.Text>
                     </Card.Body>
                 </Card>}
+                {chatIcon && <FontAwesomeIcon icon={faComment} className={styles.ChatIcon} onClick={handleDisplay}/>}
+                
             </Row>
         </Container>
 
