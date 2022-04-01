@@ -45,3 +45,53 @@ a{
     color: white !important;
 
 }
+
+/* Show in Large desktops and laptops */
+@media (min-width: 1200px) {
+
+    .HomeImg {
+        float:right;
+        width: 400px;
+        }
+    
+    }
+    
+    /*Hide in Other Small Devices */
+    
+    
+    /* Landscape tablets and medium desktops */
+    @media (min-width: 992px) and (max-width: 1199px) {
+    
+          .HomeImg {
+            background-image: none;
+        }
+    
+    }
+    
+    /* Portrait tablets and small desktops */
+    @media (min-width: 768px) and (max-width: 991px) {
+    
+              .HomeImg {
+            display: none;
+        }
+    
+    }
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+    .HomeImg {
+        display: none;
+}
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+    .HomeImg {
+        display: none;
+}
+
+}
