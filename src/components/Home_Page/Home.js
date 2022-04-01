@@ -38,12 +38,12 @@ export default function Home() {
               </nav>
         </div>
         
-        <div className="row d-flex justify-content-center align-items-center">
-            <div className="col-lg-4 col-md-12">
+        <div className={`row d-flex justify-content-around align-items-center`}>
+            <div className="col-lg-4 col-md-4 col-sm-12">
                 <p className="head my-5">Bridging India’s Skill Gap through Live classnameroom and Internship opportunities.</p>
                 <button className="regButton ">Register</button>
             </div>
-            <div className="col-lg-4 col-md-12 mx-5">
+            <div className="col-lg-4 col-md-4 col-sm-12 mx-5">
                 <img className="HomeImg" src={HomeImage} />
             </div>
         </div>

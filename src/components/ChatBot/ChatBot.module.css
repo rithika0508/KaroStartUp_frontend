@@ -7,6 +7,7 @@
     width: 50px;
     height: 50px;
     color: rgba(252,76,60,1);
+    margin-right: 20vh;
 }
 
 .ChatIcon:hover{

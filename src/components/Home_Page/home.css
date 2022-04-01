@@ -9,7 +9,7 @@ body{
     height: 100vh;
     width: 100%;
     background-image: url("Home.svg");
-    
+    overflow-x: hidden;
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,7 +17,16 @@ body{
 .HomeImg{
     float:right;
     width: 400px;
+    animation: animated 1.5s linear infinite alternate-reverse;
 }
+@keyframes animated {
+    0%{ 
+      transform: translateY(10px);
+    }
+    100%{
+      transform: translateY(-10px);
+    }
+  }
 .head{
     font-size: 28px;
     color: white;
@@ -40,6 +49,7 @@ body{
     height: 100px;
   
 }
+
 a{
     text-decoration: none;
     color: white !important;
@@ -69,14 +79,7 @@ a{
     }
     
     /* Portrait tablets and small desktops */
-    @media (min-width: 768px) and (max-width: 991px) {
     
-              .HomeImg {
-            display: none;
-        }
-    
-    }
-
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
