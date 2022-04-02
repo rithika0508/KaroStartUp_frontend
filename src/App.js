@@ -1,12 +1,14 @@
+import { useState } from "react";
 import Register from "./components/Register/Register";
 import Level from "./components/LvlSystem/Levels";
 import ChatBot from "./components/ChatBot/ChatBot";
 import Home from "./components/Home_Page/Home";
-import Reward from "./components/Reward/reward";
 function App() {
+  const [visibility, setVisibility] = useState(false);
   return (
     <>
-      <Reward/>
+      <Register visibility={visibility} setVisibility={setVisibility} />
+      <Level visibility={visibility} setVisibility={setVisibility} />
     </>
   );
 }

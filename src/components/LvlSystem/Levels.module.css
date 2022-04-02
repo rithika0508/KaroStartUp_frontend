@@ -53,7 +53,7 @@
   padding: 1rem 0.5rem;
   cursor: pointer;
 }
-.level:hover {
+.levelSelected {
   box-shadow: 0 0 3px #fc4c3c;
   margin-top: -20px;
   background-color: #582424;
