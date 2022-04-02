@@ -79,22 +79,6 @@ body{
     transform: rotateZ(180deg);
   }
 
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-250px * 4));
-    }
-  }
-
-
-
-
-  
-
-  
-
   img:hover {
     transform: translateZ(20px);
   }
