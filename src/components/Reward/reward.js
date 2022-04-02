@@ -1,6 +1,9 @@
 import styles from "./reward.module.css";
 import bgimage from './plain-blue-01.jpg';
-import wallpaper from './wallpaper.jpg';
+import certi from './certi.jpg';
+import discount from './discount.jpg';
+import intern from './intern.jpg';
+import vdo from './vdo.jpeg';
 
 const Reward = () => {
 
@@ -15,45 +18,53 @@ const Reward = () => {
 
         <a href="http://google.com"  rel="noopener">
           <div className={styles.car}>
-            <img src={wallpaper} alt="Internship Opportunities" className={styles.image}></img>
+            <img src={intern} alt="Internship Opportunities" className={styles.image}></img>
           </div>
+          <div className={styles.info}>Internship Opportunities</div>
         </a>
         <a href="http://google.com"  rel="noopener">
           <div className={styles.car}>
-            <img src={wallpaper} alt="Discount Coupons" className={styles.image}></img>
+            <img src={discount} alt="Discount Coupons" className={styles.image}></img>
           </div>
+          <div className={styles.info}>Discount Coupons</div>
         </a>
         <a href="http://google.com"  rel="noopener">
           <div className={styles.car}>
-            <img src={wallpaper} alt="Letter of Recommendation" className={styles.image}></img>
+            <img src={certi} alt="Letter of Recommendation" className={styles.image}></img>
           </div>
+          <div className={styles.info}>Certificates/Letter of Recommendation</div>
         </a>
         <a href="http://google.com"  rel="noopener">
           <div className={styles.car}>
-            <img src={wallpaper} alt="Video Courses" className={styles.image}></img>
+            <img src={vdo} alt="Video Courses" className={styles.image}></img>
           </div>
+          <div className={styles.info}>Video Courses</div>
         </a>
 
 
         <a href="http://google.com"  rel="noopener">
           <div className={styles.car}>
-            <img src={wallpaper} alt="Internship Opportunities" className={styles.image}></img>
+            <img src={intern} alt="Internship Opportunities" className={styles.image}></img>
           </div>
+          <div className={styles.info}>Internship Opportunities</div>
         </a>
         <a href="http://google.com"  rel="noopener">
           <div className={styles.car}>
-            <img src={wallpaper} alt="Discount Coupons" className={styles.image}></img>
+            <img src={discount} alt="Discount Coupons" className={styles.image}></img>
           </div>
+          <div className={styles.info}>Discount Coupons</div>
         </a>
         <a href="http://google.com"  rel="noopener">
           <div className={styles.car}>
-            <img src={wallpaper} alt="Letter of Recommendation" className={styles.image}></img>
+            <img src={certi} alt="Letter of Recommendation" className={styles.image}></img>
           </div>
+          <div className={styles.info}>Certificates/Letter of Recommendation</div>
         </a>
         <a href="http://google.com"  rel="noopener">
           <div className={styles.car}>
-            <img src={wallpaper} alt="Video Courses" className={styles.image}></img>
+            <img src={vdo} alt="Video Courses" className={styles.image}></img>
           </div>
+          <div className={styles.info}>Video Courses</div>
         </a>
 
       </div>
