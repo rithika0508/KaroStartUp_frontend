@@ -11,10 +11,16 @@
   right: 1rem;
   bottom: 1rem;
 }
-
+.App__Dates {
+  height: 100vh !important;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.app__rewards {
+  /* z-index: 1000000 */
+  position: sticky;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,7 +41,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  /* color: #61dafb; */
 }
 
 @keyframes App-logo-spin {

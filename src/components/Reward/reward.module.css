@@ -1,9 +1,8 @@
-body{
-    min-height: 100vh;
-    background-image: url(plain-blue-01.jpg);
-    place-items: center;
-  }
-  .hea {
+
+.rewards__main {
+  height: 100vh;
+}
+   .hea {
     color:aliceblue;
     font-size: 250%;
     margin: 20px 50px 0 50px;
@@ -20,13 +19,18 @@ body{
     display: grid;
     place-items: center;
     overflow: hidden;
-  }
+ }
 
-  .move {
+ .move {
     display: flex;
-    width: calc(390px * 8);
-    animation: scroll 10s linear infinite;
-  }
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    /* width: calc(390px * 8);*/
+    animation: scroll 10s linear infinite; 
+  } 
+
+
 
   .move:hover {
     animation-play-state: paused;
@@ -74,7 +78,7 @@ body{
   .slider::after {
     background: linear-gradient(to right, yellow 0%, red 100%);
     content: '';
-    height: 100%;
+    height: 100%; 
     position: absolute;
     width: 15%;
     z-index: 2;  
@@ -95,7 +99,4 @@ body{
     background-color: rgba(193, 188, 188, 0.3);
     margin:0 50px;
     padding:20px;
-  }
-  
-
-  
+  } 

@@ -14,14 +14,26 @@ function App() {
       <div className="App__chat">
         <ChatBot />
       </div>
-      <div style={{ background: "#fff" }}>
+      <div className="App__Dates">
         <Dates />
+      </div>
+      <div style={{ background: "#fff" }}>
+        <About />
+      </div>
+      <div className="app__rewards">
+        <Reward />
       </div>
 
       <Register visibility={visibility} setVisibility={setVisibility} />
       <Level visibility={visibility} setVisibility={setVisibility} />
     </div>
   );
+  // return (
+  //   <>
+  //     <Reward />
+  //     <Home />
+  //   </>
+  // );
 }
 
 export default App;

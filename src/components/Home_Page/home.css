@@ -5,7 +5,11 @@
 body{
     overflow-x: hidden;
 }
-.main{
+.nav-link {
+    border: none;
+    background: none;
+}
+.home__main{
     height: 100vh;
     width: 100%;
     background-image: url("Home.svg");
@@ -31,13 +35,23 @@ body{
     font-size: 28px;
     color: white;
 }
+.home__text {
+    position: absolute;
+    /* display: flex !important;
+    flex-direction: column; */
+    /* color: black; */
+
+}
 .regButton{
-    width: 100px;
+    /* width: fit-content; */
     font-size: 16px;
     color: white;
     background-color: black;
     border: none;
-    border-radius: 10px;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    margin-left: 0;
 }
 .navbar{
     background: #d33d2e;
