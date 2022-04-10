@@ -8,6 +8,9 @@ import vdo from "./vdo.jpeg";
 const Reward = () => {
   return (
     <div className={styles.rewards__main}>
+      <h3 style={{ textAlign: "center", color: "rgba(252,76,60,1)" }}>
+        Rewards
+      </h3>
       <div className={styles.wrap}>
         <div className={styles.move} style={{ marginLeft: "0px" }}>
           <a href="http://google.com" rel="noopener">

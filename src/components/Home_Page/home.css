@@ -52,6 +52,7 @@ body{
     padding: 0.5rem 1rem;
     text-decoration: none;
     margin-left: 0;
+    cursor: pointer;
 }
 .navbar{
     background: #d33d2e;

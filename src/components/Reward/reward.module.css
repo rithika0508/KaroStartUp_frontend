@@ -96,7 +96,7 @@
 
   a {
     border: 1px solid rgb(1, 1, 141);
-    background-color: rgba(193, 188, 188, 0.3);
+    /* background: linear-gradient(90deg, rgba(0,0,0,1) 10%, #d33d2e  100%); */
     margin:0 50px;
     padding:20px;
   } 

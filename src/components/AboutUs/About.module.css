@@ -1,9 +1,18 @@
 .AboutUl {  
-    margin: 0.75em 0;  
-    padding: 0 3em;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: center; */
+    /* margin: 0.75em 0;   */
+    /* padding: 0 3em;   */
     list-style: none;  
-
 }  
+.About__flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center ;
+
+}
 .desc:before {   
     content: "";  
     border-color: transparent white;  
@@ -26,4 +35,6 @@
     background: linear-gradient(90deg, rgba(0,0,0,1) 10%, #d33d2e  100%);
     color: white;
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
