@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+.App__main {
+  position: absolute;
+}
+
+.App__chat {
+  position: relative;
+  right: 1rem;
+  bottom: 1rem;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

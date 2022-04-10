@@ -24,6 +24,9 @@ const Register = (props) => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
+      if (password != confirmPassword) {
+        return setError("Passwords doesnt match");
+      }
       const { data } = await axios.post(
         `http://localhost:5000/api/users/Register`,
         {
@@ -40,13 +43,14 @@ const Register = (props) => {
           referral: re,
         }
       );
-      localStorage.setItem("karostartupUser", JSON.stringify(data.data));
-      console.log(data);
+      if (data) {
+        localStorage.setItem("karostartupUser", JSON.stringify(data.data));
+        props.setVisibility(true);
+      }
     } catch (error) {
-      console.log("error", error.error, error.message);
+      props.setVisibility(false);
       setError(error.message);
     }
-    props.setVisibility(true);
   };
 
   return (

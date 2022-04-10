@@ -1,12 +1,11 @@
-import React from 'react';
-import Timeline from './components/timeline';
-import './App.css';
+import React from "react";
+import Timeline from "./timeline";
+import "./app1.css";
 
-const App = () => (
+const Dates = () => (
   <>
-    
     <Timeline />
   </>
 );
 
-export default App;
+export default Dates;
