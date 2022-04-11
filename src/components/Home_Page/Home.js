@@ -34,22 +34,23 @@ export default function Home() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="#dates">
+                    Dates
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#rewards">
                     Rewards
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="#about">
                     About Us
                   </a>
                 </li>
+
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Login
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="#register">
                     Register
                   </a>
                 </li>

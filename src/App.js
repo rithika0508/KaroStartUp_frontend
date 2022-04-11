@@ -14,18 +14,19 @@ function App() {
       <div className="App__chat">
         <ChatBot />
       </div>
-      <div className="App__Dates">
+      <div className="App__Dates" id="dates">
         <Dates />
       </div>
-      <div style={{ background: "#fff" }}>
+      <div style={{ background: "#fff" }} id="about">
         <About />
       </div>
-      <div className="app__rewards">
+      <div className="app__rewards" id="rewards">
         <Reward />
       </div>
-
-      <Register visibility={visibility} setVisibility={setVisibility} />
-      <Level visibility={visibility} setVisibility={setVisibility} />
+      <div id="register">
+        <Register visibility={visibility} setVisibility={setVisibility} />
+        <Level visibility={visibility} setVisibility={setVisibility} />
+      </div>
     </div>
   );
   // return (
