@@ -1,9 +1,13 @@
 import React from "react";
+import LoginModal from "../Login/Login";
 import HomeImage from "./Home.png";
 import "./home.css";
 import logo from "./logo.png";
 
-export default function Home() {
+export default function Home(props) {
+  const onOpenModal = () => {
+    props.setOpen(true);
+  };
   return (
     <div className="home__main">
       <div className="row">
@@ -49,16 +53,24 @@ export default function Home() {
                   </a>
                 </li>
 
-                <li className="nav-item">
-                  <a className="nav-link" href="#register">
-                    Register
-                  </a>
+                <li
+                  className="nav-item"
+                  onClick={onOpenModal}
+                  style={{ cursor: "pointer" }}
+                >
+                  <a className="nav-link">Login</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
       </div>
+
+      <LoginModal
+        open={props.open}
+        setOpen={props.setOpen}
+        onCloseModal={props.onCloseModal}
+      />
 
       <div className={`row d-flex justify-content-around align-items-center`}>
         <div className="col-lg-4 col-md-4 col-sm-12">

@@ -6,11 +6,18 @@ import Home from "./components/Home_Page/Home";
 import About from "./components/AboutUs/About";
 import Reward from "./components/Reward/reward";
 import Dates from "./components/dates/app1";
+
 function App() {
   const [visibility, setVisibility] = useState(false);
+  const [open, setOpen] = useState(false);
+  const onCloseModal = () => {
+    setOpen(false);
+  };
   return (
     <div className="App__main">
-      <Home />
+      <div style={{ filter: open ? "blur(10px)" : "" }}>
+        <Home open={open} setOpen={setOpen} onCloseModal={onCloseModal} />
+      </div>
       <div className="App__chat">
         <ChatBot />
       </div>
@@ -29,12 +36,6 @@ function App() {
       </div>
     </div>
   );
-  // return (
-  //   <>
-  //     <Reward />
-  //     <Home />
-  //   </>
-  // );
 }
 
 export default App;
