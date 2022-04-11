@@ -1,6 +1,7 @@
 
 .rewards__main {
   height: 100vh;
+  padding-top: 20vh;
 }
    .hea {
     color:aliceblue;
@@ -94,9 +95,25 @@
     transform: rotateZ(180deg);
   }
 
-  a {
-    border: 1px solid rgb(1, 1, 141);
+  .card {
+    border: 1px solid #fc4c3c;
     /* background: linear-gradient(90deg, rgba(0,0,0,1) 10%, #d33d2e  100%); */
+    background: linear-gradient(90deg,  rgba(252,76,60,1) 10%, rgba(0,0,0,1) 100%);
     margin:0 50px;
     padding:20px;
+    text-decoration: none;
+    border-radius: 40px;
   } 
+  .card >.info{
+    color: white;
+  }
+  .card:hover{
+    transition:1s;
+    border: 1px solid white;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(252,76,60,1) 100%);
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px -6px rgb(0, 0, 0);
+  }
+  .card:hover >.info{
+    color: white;
+  }
