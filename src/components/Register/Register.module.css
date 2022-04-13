@@ -9,6 +9,7 @@
   width: 100%;
   font-size: large;
   position: relative;
+  z-index: -1;
 }
 .circle1 {
   position: absolute;
@@ -29,7 +30,7 @@
   border-radius: 100%;
   z-index: 1;
 }
-@media only screen and (min-width: 481px) and (max-width:768px){
+@media only screen and (min-width: 481px) and (max-width:1199px){
   .circle1{
     z-index: -1;
     position: absolute;
@@ -46,7 +47,7 @@
     z-index: -1;
   }
   .register__background{
-    z-index: 1;
+    z-index: -1;
     overflow-x: hidden;
   }
 }
@@ -67,7 +68,7 @@
     z-index: -1;
   }
   .register__background{
-    z-index: 1;
+    z-index: -1;
     overflow-x: hidden;
   }
 }

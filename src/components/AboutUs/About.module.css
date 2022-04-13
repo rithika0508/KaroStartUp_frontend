@@ -38,3 +38,17 @@
     display: flex;
     align-items: center;
 }
+@media (min-width: 767px) and (max-width: 1180px) {
+
+    .AboutImg {
+      width: 400px;
+    }
+    
+}
+@media (max-width: 480px) {
+
+    .AboutImg {
+        display: none;
+}
+}
+
