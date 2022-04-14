@@ -22,6 +22,7 @@ const Register = (props) => {
   const [error, setError] = useState("");
   const [referralLink, setReferralLink] = useState("");
   const handleRegister = async (e) => {
+    console.log("entered");
     e.preventDefault();
     try {
       if (password != confirmPassword) {
@@ -49,6 +50,7 @@ const Register = (props) => {
       }
     } catch (error) {
       props.setVisibility(false);
+      // console.log("error", error, error.message);
       setError(error.message);
     }
   };
@@ -199,17 +201,18 @@ const Register = (props) => {
               <option value="3">3rd year</option>
               <option value="4">4th year</option>
             </Form.Select>
-
+            {error && <p>{error}</p>}
             <Form.Group className="mb-3" controlId="formBasicCheckbox">
               <Form.Check
                 type="checkbox"
                 label="I agree to terms and conditions"
               />
             </Form.Group>
-
-            <Button variant="dark" type="submit">
-              Submit
-            </Button>
+            <div className={styles.register__btn}>
+              <Button variant="dark" type="submit">
+                Submit
+              </Button>
+            </div>
           </Form>
         </div>
       )}

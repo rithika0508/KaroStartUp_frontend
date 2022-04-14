@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 import "react-responsive-modal/styles.css";
 import styles from "./LoginModal.module.css";
 import { Modal } from "react-responsive-modal";
@@ -15,25 +16,26 @@ const LoginModal = (props) => {
     props.onCloseModal();
     // props.setUser(true);
   };
-  const submitHandler = async (props) => {
+  const submitHandler = async () => {
+    // console.log("entered");
     try {
-      //   const res = await axios.post("http://localhost:5000/user/signin", {
-      //     email,
-      //     password,
-      //   });
-      //   const user = { token: res.data.token, id: res.data.userInfo._id };
-      //   localStorage.setItem("user", JSON.stringify(user));
-      //   setError("");
-      //   close();
-      //   router.push("/#home");
+      const { data } = await axios.post(
+        "http://localhost:5000/api/users/login",
+        {
+          email,
+          password,
+        }
+      );
+      if (data) {
+        localStorage.setItem("karostartupUser", JSON.stringify(data.data));
+        props.setVisibility(true);
+      }
+      setError("");
+      props.onCloseModal();
+      console.log(data);
     } catch (error) {
-      console.log(error);
-      //   if (error.response) {
-      //     setError(error.response.data.message);
-      //   } else {
-      //     console.log(error);
-      //     setError("Something Went Wrong,Please Try Again!");
-      //   }
+      props.setVisibility(false);
+      setError(error.message);
     }
   };
   const forgotPassword = async () => {
@@ -99,19 +101,6 @@ const LoginModal = (props) => {
             Log In
           </button>
         </div>
-        {
-          //   <div className={styles.need}>
-          //     <p className={styles.ns}>
-          //       Need an Account?{" "}
-          //       <span
-          //         style={{ color: "#1b9bf0", cursor: "pointer" }}
-          //         onClick={signUpHandler}
-          //       >
-          //         Sign Up
-          //       </span>
-          //     </p>
-          //   </div>
-        }
       </div>
     </Modal>
   );
