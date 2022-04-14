@@ -10,8 +10,11 @@ const LoginModal = (props) => {
   const [error, setError] = useState("");
   useEffect(() => {
     setError("");
-  }, []);
+  }, [props.visibility]);
 
+  const lvlVisibility = () => {
+    props.setVisibility(true);
+  };
   const close = () => {
     props.onCloseModal();
     // props.setUser(true);
@@ -28,14 +31,18 @@ const LoginModal = (props) => {
       );
       if (data) {
         localStorage.setItem("karostartupUser", JSON.stringify(data.data));
+        localStorage.setItem("karostartupToken", JSON.stringify(data.token));
+        // lvlVisibility();
         props.setVisibility(true);
+        setError("");
+        props.onCloseModal();
+        // props.history.push("#register");
+        console.log(data);
       }
-      setError("");
-      props.onCloseModal();
-      console.log(data);
     } catch (error) {
-      props.setVisibility(false);
+      // props.setVisibility(false);
       setError(error.message);
+      console.log(error);
     }
   };
   const forgotPassword = async () => {

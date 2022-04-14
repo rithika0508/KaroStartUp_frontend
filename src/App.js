@@ -21,6 +21,7 @@ function App() {
           setOpen={setOpen}
           onCloseModal={onCloseModal}
           setVisibility={setVisibility}
+          visibility={visibility}
         />
       </div>
       <div className="App__chat">

@@ -3,7 +3,7 @@
   background: linear-gradient(90deg, rgba(252,76,60,1) 0%, rgba(0,0,0,1) 100% ,rgba(252,76,60,1) 0%);
   position: relative;
   z-index: 1000;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,7 +62,20 @@
   background-color: #582424;
   border-radius: 20px;
   transition: 0.5s;
+  padding: 1rem 0.5rem;
+  /* height: fit-content; */
   /* color: black; */
+}
+
+.download {
+  padding: 2px;
+  border: none;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 25px;
+  /* border: solid black 1px; */
+  color: wheat
 }
 
 .link{

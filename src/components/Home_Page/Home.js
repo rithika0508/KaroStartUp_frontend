@@ -84,6 +84,7 @@ export default function Home(props) {
         open={props.open}
         setOpen={props.setOpen}
         onCloseModal={props.onCloseModal}
+        setVisibility={props.setVisibility}
       />
 
       <div className={`row d-flex justify-content-around align-items-center`}>

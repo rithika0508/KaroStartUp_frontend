@@ -46,6 +46,7 @@ const Register = (props) => {
       );
       if (data) {
         localStorage.setItem("karostartupUser", JSON.stringify(data.data));
+        localStorage.setItem("karostartupToken", JSON.stringify(data.token));
         props.setVisibility(true);
       }
     } catch (error) {
