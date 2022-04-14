@@ -8,6 +8,10 @@ export default function Home(props) {
   const onOpenModal = () => {
     props.setOpen(true);
   };
+  const logout = () => {
+    localStorage.removeItem("karostartupUser");
+    props.setVisibility(false);
+  };
   return (
     <div className="home__main">
       <div className="row">
@@ -47,19 +51,29 @@ export default function Home(props) {
                     Rewards
                   </a>
                 </li>
+
                 <li className="nav-item">
                   <a className="nav-link" href="#about">
                     About Us
                   </a>
                 </li>
-
-                <li
-                  className="nav-item"
-                  onClick={onOpenModal}
-                  style={{ cursor: "pointer" }}
-                >
-                  <a className="nav-link">Login</a>
-                </li>
+                {localStorage.getItem("karostartupUser") ? (
+                  <li
+                    className="nav-item"
+                    onClick={logout}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <a className="nav-link">Logout</a>
+                  </li>
+                ) : (
+                  <li
+                    className="nav-item"
+                    onClick={onOpenModal}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <a className="nav-link">Login</a>
+                  </li>
+                )}
               </ul>
             </div>
           </div>
@@ -78,7 +92,9 @@ export default function Home(props) {
             Bridging India’s Skill Gap through Live classnameroom and Internship
             opportunities.
           </p>
-          <a className="regButton">Register</a>
+          <a className="regButton" href="#register">
+            Register
+          </a>
         </div>
         <div className="col-lg-4 col-md-4 col-sm-12 mx-5">
           <img className="HomeImg" src={HomeImage} />

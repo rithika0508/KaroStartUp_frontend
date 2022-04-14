@@ -16,7 +16,12 @@ function App() {
   return (
     <div className="App__main">
       <div style={{ filter: open ? "blur(10px)" : "" }}>
-        <Home open={open} setOpen={setOpen} onCloseModal={onCloseModal} />
+        <Home
+          open={open}
+          setOpen={setOpen}
+          onCloseModal={onCloseModal}
+          setVisibility={setVisibility}
+        />
       </div>
       <div className="App__chat">
         <ChatBot />
